@@ -1,0 +1,13 @@
+sqlite3 myData.db /* create or connect to the database */
+
+CREATE TABLE 'instructors' ('id' INTEGER, 'name' TEXT, 'email' TEXT);
+
+INSERT INTO instructors (id, name, email) VALUES(1, 'David', 'david@harvard.edu');
+
+INSERT INTO instructors (id, name, email) VALUES(2, 'Colton', 'colton@harvard.edu');
+
+SELECT * FROM instructors;
+
+SELECT name FROM instructors;
+
+SELECT name, email FROM instructors;
